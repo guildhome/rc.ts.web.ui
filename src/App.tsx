@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-
+import Login from './login/Login'
 import logo from './logo.svg';
 
 class App extends React.Component {
@@ -14,6 +14,7 @@ class App extends React.Component {
         <p className="App-intro">
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Login />
       </div>
     );
   }

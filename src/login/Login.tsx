@@ -55,7 +55,7 @@ class Login extends React.Component<any, any> {
         },
       })
        .then(response => {
-            UserService.USER = response.data
+            new UserService().saveUser(response.data)
        }).catch(error => {
            UserService.USER.token = "error"
        })

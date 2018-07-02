@@ -10,6 +10,7 @@ class UserService
 public static USER = {token: ""}
 
 public saveUser(user: any){
+	console.log(`saving user ${JSON.stringify(user)}`)
    this.localStorageRepo.add("user", JSON.stringify(user))
 }
 
